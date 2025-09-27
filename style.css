@@ -1,0 +1,120 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Body with gradient background */
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #6c63ff, #7ed6df);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card container for login/register */
+.container {
+    background: #fff;
+    width: 350px;
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+/* Input groups */
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 40px 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus effect on inputs */
+.form-group input:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.4);
+}
+
+/* Font Awesome icons inside inputs */
+.form-group i {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 1rem;
+    pointer-events: none;
+}
+
+/* Paragraph styles inside form */
+form p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+/* Checkbox color */
+form p input[type="checkbox"] {
+    margin-right: 6px;
+    accent-color: #6c63ff;
+}
+
+/* Links (Forgot password / switch to other page) */
+form p a {
+    text-decoration: none;
+    color: #6c63ff;
+    font-weight: 500;
+}
+
+form p a:hover {
+    text-decoration: underline;
+}
+
+/* Button style */
+#btn {
+    width: 100%;
+    padding: 12px;
+    background: #6c63ff;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+#btn:hover {
+    background: #5848d3;
+}
+
+/* Last paragraph for register/login link */
+form p:last-child {
+    text-align: center;
+}
+
+/* Responsive for small devices */
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+        padding: 2rem 1.5rem;
+    }
+}
